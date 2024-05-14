@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import pickle
 import os
@@ -29,6 +29,10 @@ def predict():
     # Make prediction
     prediction = model.predict(year_scaled)[0]
     return jsonify({'prediction': prediction})
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

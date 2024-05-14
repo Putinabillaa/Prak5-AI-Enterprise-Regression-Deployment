@@ -175,7 +175,7 @@
             const jsonData = {};
             formData.forEach((value, key) => {jsonData[key] = value});
             console.log(jsonData);
-            fetch('http://127.0.0.1:5000/predict_regression', {
+            fetch('/predict_regression', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
