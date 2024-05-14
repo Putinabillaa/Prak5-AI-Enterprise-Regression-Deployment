@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression Prediction</title>
+</head>
+<body>
+    <h1>Regression Prediction</h1>
+    <form id="predictionForm">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" required><br><br>
+        <label for="programmingLanguage">Programming Language:</label>
+        <select id="programmingLanguage" name="programmingLanguage" required>
+            <option value="PLpgSQL">PLpgSQL</option>
+            <option value="OCaml">OCaml</option>
+            <option value="Scheme">Scheme</option>
+            <option value="Inno Setup">Inno Setup</option>
+            <option value="Ada">Ada</option>
+            <option value="Emacs Lisp">Emacs Lisp</option>
+            <option value="Pascal">Pascal</option>
+            <option value="NSIS">NSIS</option>
+            <option value="Ceylon">Ceylon</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Common Lisp">Common Lisp</option>
+            <option value="C++">C++</option>
+            <option value="TeX">TeX</option>
+            <option value="Brightscript">Brightscript</option>
+            <option value="Apex">Apex</option>
+            <option value="RobotFramework">RobotFramework</option>
+            <option value="UnrealScript">UnrealScript</option>
+            <option value="Go">Go</option>
+            <option value="Racket">Racket</option>
+            <option value="SWIG">SWIG</option>
+            <option value="Nix">Nix</option>
+            <option value="API Blueprint">API Blueprint</option>
+            <option value="Nim">Nim</option>
+            <option value="SystemVerilog">SystemVerilog</option>
+            <option value="Mako">Mako</option>
+            <option value="QML">QML</option>
+            <option value="CMake">CMake</option>
+            <option value="GDScript">GDScript</option>
+            <option value="Python">Python</option>
+            <option value="CSS">CSS</option>
+            <option value="Clojure">Clojure</option>
+            <option value="ASP">ASP</option>
+            <option value="Elixir">Elixir</option>
+            <option value="Jinja">Jinja</option>
+            <option value="Processing">Processing</option>
+            <option value="Gherkin">Gherkin</option>
+            <option value="Dockerfile">Dockerfile</option>
+            <option value="Dart">Dart</option>
+            <option value="Makefile">Makefile</option>
+            <option value="Shell">Shell</option>
+            <option value="Objective-C++">Objective-C++</option>
+            <option value="Haxe">Haxe</option>
+            <option value="Assembly">Assembly</option>
+            <option value="Cuda">Cuda</option>
+            <option value="SCSS">SCSS</option>
+            <option value="Rich Text Format">Rich Text Format</option>
+            <option value="Perl">Perl</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="Smalltalk">Smalltalk</option>
+            <option value="C#">C#</option>
+            <option value="Pawn">Pawn</option>
+            <option value="Vue">Vue</option>
+            <option value="Visual Basic">Visual Basic</option>
+            <option value="Rust">Rust</option>
+            <option value="FreeMarker">FreeMarker</option>
+            <option value="VimL">VimL</option>
+            <option value="PureScript">PureScript</option>
+            <option value="Erlang">Erlang</option>
+            <option value="Batchfile">Batchfile</option>
+            <option value="Ragel in Ruby Host">Ragel in Ruby Host</option>
+            <option value="R">R</option>
+            <option value="Eagle">Eagle</option>
+            <option value="TSQL">TSQL</option>
+            <option value="Logos">Logos</option>
+            <option value="Mathematica">Mathematica</option>
+            <option value="Hack">Hack</option>
+            <option value="Java">Java</option>
+            <option value="Elm">Elm</option>
+            <option value="HTML">HTML</option>
+            <option value="ABAP">ABAP</option>
+            <option value="Kotlin">Kotlin</option>
+            <option value="Crystal">Crystal</option>
+            <option value="SQF">SQF</option>
+            <option value="Smarty">Smarty</option>
+            <option value="Xtend">Xtend</option>
+            <option value="SQLPL">SQLPL</option>
+            <option value="Haskell">Haskell</option>
+            <option value="Factor">Factor</option>
+            <option value="PHP">PHP</option>
+            <option value="ooc">ooc</option>
+            <option value="KiCad">KiCad</option>
+            <option value="Lua">Lua</option>
+            <option value="Nunjucks">Nunjucks</option>
+            <option value="Max">Max</option>
+            <option value="Thrift">Thrift</option>
+            <option value="GLSL">GLSL</option>
+            <option value="AutoIt">AutoIt</option>
+            <option value="PowerShell">PowerShell</option>
+            <option value="Arduino">Arduino</option>
+            <option value="VHDL">VHDL</option>
+            <option value="Tcl">Tcl</option>
+            <option value="Jupyter Notebook">Jupyter Notebook</option>
+            <option value="xBase">xBase</option>
+            <option value="AutoHotkey">AutoHotkey</option>
+            <option value="SaltStack">SaltStack</option>
+            <option value="Verilog">Verilog</option>
+            <option value="CodeQL">CodeQL</option>
+            <option value="Nginx">Nginx</option>
+            <option value="Scala">Scala</option>
+            <option value="HCL">HCL</option>
+            <option value="Vala">Vala</option>
+            <option value="Swift">Swift</option>
+            <option value="Matlab">Matlab</option>
+            <option value="Roff">Roff</option>
+            <option value="PostScript">PostScript</option>
+            <option value="Jsonnet">Jsonnet</option>
+            <option value="Perl 6">Perl 6</option>
+            <option value="DM">DM</option>
+            <option value="LiveScript">LiveScript</option>
+            <option value="Uno">Uno</option>
+            <option value="Vim script">Vim script</option>
+            <option value="YAML">YAML</option>
+            <option value="Fortran">Fortran</option>
+            <option value="ZenScript">ZenScript</option>
+            <option value="LabVIEW">LabVIEW</option>
+            <option value="Rascal">Rascal</option>
+            <option value="Julia">Julia</option>
+            <option value="PLSQL">PLSQL</option>
+            <option value="OpenEdge ABL">OpenEdge ABL</option>
+            <option value="SourcePawn">SourcePawn</option>
+            <option value="Web Ontology Language">Web Ontology Language</option>
+            <option value="Groovy">Groovy</option>
+            <option value="CoffeeScript">CoffeeScript</option>
+            <option value="Protocol Buffer">Protocol Buffer</option>
+            <option value="Raku">Raku</option>
+            <option value="XSLT">XSLT</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="F*">F*</option>
+            <option value="F#">F#</option>
+            <option value="ColdFusion">ColdFusion</option>
+            <option value="ApacheConf">ApacheConf</option>
+            <option value="BitBake">BitBake</option>
+            <option value="Starlark">Starlark</option>
+            <option value="Eiffel">Eiffel</option>
+            <option value="M">M</option>
+            <option value="Forth">Forth</option>
+            <option value="Coq">Coq</option>
+            <option value="Puppet">Puppet</option>
+            <option value="C">C</option>
+            <option value="Visual Basic .NET">Visual Basic .NET</option>
+            <option value="D">D</option>
+            <option value="Objective-J">Objective-J</option>
+            <option value="Objective-C">Objective-C</option>
+            <option value="Standard ML">Standard ML</option>
+            <option value="Ruby">Ruby</option>
+            <option value="ActionScript">ActionScript</option>
+            <option value="Reason">Reason</option>
+            <option value="AGS Script">AGS Script</option>
+            <option value="1C Enterprise">1C Enterprise</option>
+            <option value="Inform 7">Inform 7</option>
+            <option value="Stata">Stata</option>
+        </select><br><br>
+        <button type="submit">Predict</button>
+    </form>
+    <div id="predictionResult"></div>
+
+    <script>
+        document.getElementById("predictionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const jsonData = {};
+            formData.forEach((value, key) => {jsonData[key] = value});
+            console.log(jsonData);
+            fetch('http://127.0.0.1:5000/predict_regression', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(jsonData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("predictionResult").innerHTML = `Number of Issues Prediction: ${data.prediction}`;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
